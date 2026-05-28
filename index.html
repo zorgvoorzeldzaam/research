@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Care4GenID — Research Group</title>
-  <meta name="description" content="Care4GenID is an interdisciplinary research group focused on genetic neurodevelopmental disorders and intellectual disabilities.">
+  <meta name="description" content="An interdisciplinary research group focused on genetic neurodevelopmental disorders and intellectual disabilities.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,30 +14,10 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Care4<span>GenID</span></a>
       <ul class="nav-links">
-        <li>
-          <a href="index.html" class="active">
-            <span class="lang-en">Home</span>
-            <span class="lang-nl">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="team.html">
-            <span class="lang-en">Team</span>
-            <span class="lang-nl">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="research.html">
-            <span class="lang-en">Research</span>
-            <span class="lang-nl">Onderzoek</span>
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">
-            <span class="lang-en">Contact</span>
-            <span class="lang-nl">Contact</span>
-          </a>
-        </li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li>
           <div class="lang-switch">
             <button data-lang="en" class="active">EN</button>
@@ -55,92 +35,162 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
-        <h1>
-          <span class="lang-en">Care4GenID</span>
-          <span class="lang-nl">Care4GenID</span>
-        </h1>
-        <p class="lang-en">
-          We are an interdisciplinary research group focused on genetic neurodevelopmental disorders and intellectual disabilities. Our work centers on two pillars: the harmonization of outcome measures to enable robust cross-study comparisons, and the development and evaluation of novel treatments and therapeutic interventions.
-        </p>
-        <p class="lang-nl">
-          Wij zijn een interdisciplinaire onderzoeksgroep gericht op genetische neurobiologische ontwikkelingsstoornissen en verstandelijke beperkingen. Ons werk richt zich op twee pijlers: het harmoniseren van uitkomstmaten om robuuste vergelijkingen tussen studies mogelijk te maken, en de ontwikkeling en evaluatie van nieuwe behandelingen en therapeutische interventies.
-        </p>
+        <span class="eyebrow lang-en">Interdisciplinary Research Group</span>
+        <span class="eyebrow lang-nl">Interdisciplinaire Onderzoeksgroep</span>
+        <h1 class="lang-en">Better care for people with <span class="accent">genetic neurodevelopmental disorders</span>.</h1>
+        <h1 class="lang-nl">Betere zorg voor mensen met <span class="accent">genetische neurobiologische ontwikkelingsstoornissen</span>.</h1>
+        <p class="lang-en">We harmonize how outcomes are measured across studies and investigate new treatments and therapies that make a real difference for individuals with genetic neurodevelopmental disorders and intellectual disabilities.</p>
+        <p class="lang-nl">Wij harmoniseren hoe uitkomsten gemeten worden in verschillende studies en onderzoeken nieuwe behandelingen en therapieën die een echt verschil maken voor mensen met genetische neurobiologische ontwikkelingsstoornissen en verstandelijke beperkingen.</p>
+        <div class="hero-cta">
+          <a href="research.html" class="btn btn-primary"><span class="lang-en">Our Research</span><span class="lang-nl">Ons Onderzoek</span></a>
+          <a href="contact.html" class="btn btn-ghost"><span class="lang-en">Get in Touch</span><span class="lang-nl">Neem Contact Op</span></a>
+        </div>
       </div>
     </section>
 
-    <!-- MISSION / PILLARS -->
+    <!-- WHO WE ARE (moved up, was in banner) -->
+    <section class="intro-band">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="fade-in">
+            <span class="eyebrow-dark lang-en">Who We Are</span>
+            <span class="eyebrow-dark lang-nl">Wie Wij Zijn</span>
+            <h2 class="section-title lang-en">An interdisciplinary group bridging research and care.</h2>
+            <h2 class="section-title lang-nl">Een interdisciplinaire groep tussen onderzoek en zorg.</h2>
+          </div>
+          <div class="intro-body fade-in">
+            <p class="intro-lead lang-en">Care4GenID brings together clinicians, researchers, and methodologists committed to improving the lives of individuals with <span class="hl">genetic neurodevelopmental disorders</span> and intellectual disabilities.</p>
+            <p class="intro-lead lang-nl">Care4GenID brengt clinici, onderzoekers en methodologen samen die zich inzetten voor het verbeteren van het leven van mensen met <span class="hl">genetische neurobiologische ontwikkelingsstoornissen</span> en verstandelijke beperkingen.</p>
+            <p class="lang-en">Our work spans the full path from measurement to treatment: developing rigorous, harmonized outcome measures, validating tools that capture what truly matters to patients and families, and studying interventions that improve everyday functioning and quality of life.</p>
+            <p class="lang-nl">Ons werk omvat het volledige traject van meting tot behandeling: het ontwikkelen van betrouwbare, geharmoniseerde uitkomstmaten, het valideren van instrumenten die meten wat er echt toe doet voor patiënten en families, en het bestuderen van interventies die het dagelijks functioneren en de kwaliteit van leven verbeteren.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION (moved down, now worded statements) -->
+    <section class="section section-dark">
+      <div class="container">
+        <span class="eyebrow-dark lang-en">Our Mission</span>
+        <span class="eyebrow-dark lang-nl">Onze Missie</span>
+        <h2 class="section-title lang-en">What drives our work.</h2>
+        <h2 class="section-title lang-nl">Wat ons werk drijft.</h2>
+
+        <div class="mission-list">
+          <div class="mission-item fade-in">
+            <span class="mission-num">01</span>
+            <div>
+              <h3 class="lang-en">Measure what matters</h3>
+              <h3 class="lang-nl">Meten wat ertoe doet</h3>
+              <p class="lang-en">We harmonize outcome measurement across studies so that findings can be compared, combined, and trusted — and so that the voices of patients and families are reflected in what we measure.</p>
+              <p class="lang-nl">Wij harmoniseren uitkomstmetingen tussen studies zodat resultaten vergeleken, gecombineerd en vertrouwd kunnen worden — en zodat de stem van patiënten en families weerklinkt in wat wij meten.</p>
+            </div>
+          </div>
+          <div class="mission-item fade-in">
+            <span class="mission-num">02</span>
+            <div>
+              <h3 class="lang-en">Advance new treatments</h3>
+              <h3 class="lang-nl">Nieuwe behandelingen ontwikkelen</h3>
+              <p class="lang-en">We investigate therapies and interventions that can meaningfully improve daily functioning, development, and wellbeing for individuals with genetic neurodevelopmental disorders.</p>
+              <p class="lang-nl">Wij onderzoeken therapieën en interventies die het dagelijks functioneren, de ontwikkeling en het welzijn van mensen met genetische neurobiologische ontwikkelingsstoornissen wezenlijk kunnen verbeteren.</p>
+            </div>
+          </div>
+          <div class="mission-item fade-in">
+            <span class="mission-num">03</span>
+            <div>
+              <h3 class="lang-en">Connect research and care</h3>
+              <h3 class="lang-nl">Onderzoek en zorg verbinden</h3>
+              <p class="lang-en">We work closely with clinicians, patient organizations, and families to ensure that research translates into better, more equitable care in everyday practice.</p>
+              <p class="lang-nl">Wij werken nauw samen met clinici, patiëntenorganisaties en families om ervoor te zorgen dat onderzoek zich vertaalt naar betere en rechtvaardigere zorg in de dagelijkse praktijk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH PREVIEW (abstract art cards) -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title fade-in">
-          <span class="lang-en">Our Mission</span>
-          <span class="lang-nl">Onze Missie</span>
-        </h2>
-        <p class="section-subtitle fade-in">
-          <span class="lang-en">Advancing care and knowledge for individuals with genetic neurodevelopmental disorders through collaborative, rigorous research.</span>
-          <span class="lang-nl">Het verbeteren van zorg en kennis voor mensen met genetische neurobiologische ontwikkelingsstoornissen door middel van samenwerkend, rigoureus onderzoek.</span>
-        </p>
+        <span class="eyebrow-dark lang-en">Research Themes</span>
+        <span class="eyebrow-dark lang-nl">Onderzoeksthema's</span>
+        <h2 class="section-title lang-en">The questions we explore.</h2>
+        <h2 class="section-title lang-nl">De vragen die wij onderzoeken.</h2>
+        <p class="section-intro lang-en">Our research is organized around several interconnected themes, each addressing a different part of the path from measurement to better care.</p>
+        <p class="section-intro lang-nl">Ons onderzoek is georganiseerd rond verschillende samenhangende thema's, die elk een ander deel van het traject van meting naar betere zorg behandelen.</p>
 
-        <div class="pillars">
-          <div class="pillar-card fade-in">
-            <div class="pillar-icon">📊</div>
-            <h3>
-              <span class="lang-en">Harmonizing Outcome Measures</span>
-              <span class="lang-nl">Harmoniseren van Uitkomstmaten</span>
-            </h3>
-            <p>
-              <span class="lang-en">We work to standardize and align outcome measures across studies, enabling meaningful comparisons and building a stronger evidence base for the field.</span>
-              <span class="lang-nl">Wij werken aan het standaardiseren en afstemmen van uitkomstmaten tussen studies, waardoor betekenisvolle vergelijkingen mogelijk worden en een sterkere wetenschappelijke basis wordt opgebouwd.</span>
-            </p>
-          </div>
+        <div class="theme-grid">
+          <article class="theme-card fade-in">
+            <svg class="theme-art" viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="170" fill="#200432"/>
+              <circle cx="90" cy="85" r="58" fill="none" stroke="#CD1A30" stroke-width="1.5" opacity="0.7"/>
+              <circle cx="150" cy="85" r="58" fill="none" stroke="#FE8932" stroke-width="1.5" opacity="0.7"/>
+              <circle cx="120" cy="85" r="34" fill="#7A0C31" opacity="0.55"/>
+              <circle cx="280" cy="60" r="4" fill="#FEE7B5"/>
+              <circle cx="320" cy="100" r="4" fill="#FE8932"/>
+              <circle cx="300" cy="130" r="4" fill="#CD1A30"/>
+              <line x1="280" y1="60" x2="320" y2="100" stroke="#FEE7B5" stroke-width="1" opacity="0.4"/>
+              <line x1="320" y1="100" x2="300" y2="130" stroke="#FEE7B5" stroke-width="1" opacity="0.4"/>
+            </svg>
+            <div class="theme-body">
+              <h3 class="lang-en">Outcome Measurement</h3>
+              <h3 class="lang-nl">Uitkomstmeting</h3>
+              <p class="lang-en">Harmonizing and validating measures that capture what matters most to patients and families across studies.</p>
+              <p class="lang-nl">Het harmoniseren en valideren van metingen die vastleggen wat het belangrijkst is voor patiënten en families, in verschillende studies.</p>
+            </div>
+          </article>
 
-          <div class="pillar-card fade-in">
-            <div class="pillar-icon">🔬</div>
-            <h3>
-              <span class="lang-en">Novel Treatments & Therapies</span>
-              <span class="lang-nl">Nieuwe Behandelingen & Therapieën</span>
-            </h3>
-            <p>
-              <span class="lang-en">We investigate and evaluate new treatments and therapeutic interventions, aiming to improve outcomes and quality of life for individuals and their families.</span>
-              <span class="lang-nl">Wij onderzoeken en evalueren nieuwe behandelingen en therapeutische interventies, met als doel de uitkomsten en kwaliteit van leven voor individuen en hun families te verbeteren.</span>
-            </p>
-          </div>
+          <article class="theme-card fade-in">
+            <svg class="theme-art" viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="170" fill="#4A0730"/>
+              <path d="M40 130 Q110 40 180 95 T340 60" fill="none" stroke="#FE8932" stroke-width="2.5"/>
+              <circle cx="40" cy="130" r="6" fill="#FEE7B5"/>
+              <circle cx="180" cy="95" r="6" fill="#CD1A30"/>
+              <circle cx="340" cy="60" r="6" fill="#FE8932"/>
+              <rect x="60" y="120" width="14" height="30" fill="#7A0C31" opacity="0.6"/>
+              <rect x="120" y="100" width="14" height="50" fill="#7A0C31" opacity="0.6"/>
+              <rect x="240" y="85" width="14" height="65" fill="#CD1A30" opacity="0.55"/>
+              <rect x="300" y="70" width="14" height="80" fill="#CD1A30" opacity="0.55"/>
+            </svg>
+            <div class="theme-body">
+              <h3 class="lang-en">Treatments &amp; Therapies</h3>
+              <h3 class="lang-nl">Behandelingen &amp; Therapieën</h3>
+              <p class="lang-en">Investigating interventions that improve development, daily functioning, and quality of life.</p>
+              <p class="lang-nl">Het onderzoeken van interventies die de ontwikkeling, het dagelijks functioneren en de kwaliteit van leven verbeteren.</p>
+            </div>
+          </article>
 
-          <div class="pillar-card fade-in">
-            <div class="pillar-icon">🤝</div>
-            <h3>
-              <span class="lang-en">Interdisciplinary Collaboration</span>
-              <span class="lang-nl">Interdisciplinaire Samenwerking</span>
-            </h3>
-            <p>
-              <span class="lang-en">Our team brings together expertise from clinical practice, genetics, psychology, and allied health to address complex research questions from multiple perspectives.</span>
-              <span class="lang-nl">Ons team brengt expertise samen vanuit de klinische praktijk, genetica, psychologie en aanverwante gezondheidswetenschappen om complexe onderzoeksvragen vanuit meerdere perspectieven te benaderen.</span>
-            </p>
-          </div>
+          <article class="theme-card fade-in">
+            <svg class="theme-art" viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="170" fill="#200432"/>
+              <circle cx="130" cy="85" r="26" fill="#CD1A30" opacity="0.85"/>
+              <circle cx="250" cy="55" r="20" fill="#FE8932" opacity="0.85"/>
+              <circle cx="280" cy="120" r="22" fill="#7A0C31" opacity="0.9"/>
+              <line x1="130" y1="85" x2="250" y2="55" stroke="#FEE7B5" stroke-width="1.5" opacity="0.5"/>
+              <line x1="130" y1="85" x2="280" y2="120" stroke="#FEE7B5" stroke-width="1.5" opacity="0.5"/>
+              <line x1="250" y1="55" x2="280" y2="120" stroke="#FEE7B5" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="130" cy="85" r="6" fill="#FEE7B5"/>
+              <circle cx="250" cy="55" r="6" fill="#FEE7B5"/>
+              <circle cx="280" cy="120" r="6" fill="#FEE7B5"/>
+            </svg>
+            <div class="theme-body">
+              <h3 class="lang-en">Care &amp; Implementation</h3>
+              <h3 class="lang-nl">Zorg &amp; Implementatie</h3>
+              <p class="lang-en">Translating research into equitable, practical care alongside clinicians, families, and patient organizations.</p>
+              <p class="lang-nl">Het vertalen van onderzoek naar rechtvaardige, praktische zorg, samen met clinici, families en patiëntenorganisaties.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="section section--alt">
+    <!-- CTA -->
+    <section class="cta-band">
       <div class="container">
-        <h2 class="section-title fade-in">
-          <span class="lang-en">About Our Research</span>
-          <span class="lang-nl">Over Ons Onderzoek</span>
-        </h2>
-        <div class="fade-in" style="max-width: 760px;">
-          <p class="lang-en" style="margin-bottom: 1.25rem; color: var(--color-text-light);">
-            Genetic neurodevelopmental disorders encompass a wide range of conditions that affect brain development and functioning. Many individuals with these disorders also have intellectual disabilities, creating complex needs that require nuanced, evidence-based approaches to care.
-          </p>
-          <p class="lang-en" style="color: var(--color-text-light);">
-            At Care4GenID, we believe that better outcome measures lead to better research, and better research leads to better care. By bridging the gap between clinical practice and scientific inquiry, we strive to make a tangible difference in the lives of individuals and families affected by these conditions.
-          </p>
-          <p class="lang-nl" style="margin-bottom: 1.25rem; color: var(--color-text-light);">
-            Genetische neurobiologische ontwikkelingsstoornissen omvatten een breed scala aan aandoeningen die de hersenontwikkeling en het functioneren beïnvloeden. Veel mensen met deze stoornissen hebben ook een verstandelijke beperking, wat leidt tot complexe behoeften die een genuanceerde, evidence-based benadering van zorg vereisen.
-          </p>
-          <p class="lang-nl" style="color: var(--color-text-light);">
-            Bij Care4GenID geloven wij dat betere uitkomstmaten leiden tot beter onderzoek, en beter onderzoek leidt tot betere zorg. Door de kloof tussen klinische praktijk en wetenschappelijk onderzoek te overbruggen, streven wij ernaar een tastbaar verschil te maken in het leven van individuen en families die met deze aandoeningen te maken hebben.
-          </p>
-        </div>
+        <h2 class="lang-en">Interested in working with us?</h2>
+        <h2 class="lang-nl">Interesse in samenwerking?</h2>
+        <p class="lang-en">We welcome collaboration with researchers, clinicians, patient organizations, and students.</p>
+        <p class="lang-nl">Wij verwelkomen samenwerking met onderzoekers, clinici, patiëntenorganisaties en studenten.</p>
+        <a href="contact.html" class="btn btn-primary"><span class="lang-en">Contact Us</span><span class="lang-nl">Neem Contact Op</span></a>
       </div>
     </section>
   </main>
@@ -156,7 +206,7 @@
         </p>
       </div>
       <ul class="footer-links">
-        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-nl">Home</span></a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
         <li><a href="contact.html">Contact</a></li>
