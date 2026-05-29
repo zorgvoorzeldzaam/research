@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Care4GenID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Care4<span>GenID</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
+        <li><a href="events.html" class="active"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <div class="lang-switch">
+            <button data-lang="en" class="active">EN</button>
+            <button data-lang="nl">NL</button>
+          </div>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="hero-content">
+        <h1 class="lang-en">Events</h1>
+        <h1 class="lang-nl">Evenementen</h1>
+        <p class="lang-en">Webinars, workshops, and conferences hosted or organized by Care4GenID.</p>
+        <p class="lang-nl">Webinars, workshops en congressen georganiseerd door Care4GenID.</p>
+      </div>
+    </section>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow-dark lang-en">Upcoming</span>
+        <span class="eyebrow-dark lang-nl">Aankomend</span>
+        <h2 class="section-title lang-en">Upcoming events.</h2>
+        <h2 class="section-title lang-nl">Aankomende evenementen.</h2>
+
+        <div class="event-list">
+          <div class="event-card fade-in">
+            <p class="event-date">[Date] 2026</p>
+            <h3>[Event Title]</h3>
+            <p class="lang-en">[Brief description of the event — topic, format, and who it is for.]</p>
+            <p class="lang-nl">[Korte beschrijving van het evenement — onderwerp, format en doelgroep.]</p>
+            <span class="event-tag lang-en">Webinar</span>
+            <span class="event-tag lang-nl">Webinar</span>
+          </div>
+
+          <div class="event-card fade-in">
+            <p class="event-date">[Date] 2026</p>
+            <h3>[Event Title]</h3>
+            <p class="lang-en">[Brief description of the event — topic, format, and who it is for.]</p>
+            <p class="lang-nl">[Korte beschrijving van het evenement — onderwerp, format en doelgroep.]</p>
+            <span class="event-tag lang-en">Workshop</span>
+            <span class="event-tag lang-nl">Workshop</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAST EVENTS -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <span class="eyebrow-dark lang-en">Past Events</span>
+        <span class="eyebrow-dark lang-nl">Eerdere Evenementen</span>
+        <h2 class="section-title lang-en">Past events.</h2>
+        <h2 class="section-title lang-nl">Eerdere evenementen.</h2>
+
+        <div class="event-list">
+          <div class="event-card fade-in" style="opacity:0.75;">
+            <p class="event-date">[Date] 2025</p>
+            <h3>[Event Title]</h3>
+            <p class="lang-en">[Brief description of the past event.]</p>
+            <p class="lang-nl">[Korte beschrijving van het eerdere evenement.]</p>
+            <span class="event-tag lang-en">Conference</span>
+            <span class="event-tag lang-nl">Congres</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="lang-en">Want to attend or co-host an event?</h2>
+        <h2 class="lang-nl">Wilt u een evenement bijwonen of mede-organiseren?</h2>
+        <p class="lang-en">Reach out to discuss upcoming opportunities.</p>
+        <p class="lang-nl">Neem contact op om mogelijkheden te bespreken.</p>
+        <a href="contact.html" class="btn btn-primary"><span class="lang-en">Contact Us</span><span class="lang-nl">Neem Contact Op</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">Care4<span>GenID</span></div>
+        <p>
+          <span class="lang-en">Research for individuals with genetic neurodevelopmental disorders and intellectual disabilities.</span>
+          <span class="lang-nl">Onderzoek voor mensen met genetische neurobiologische ontwikkelingsstoornissen en verstandelijke beperkingen.</span>
+        </p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
+        <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Care4GenID. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
