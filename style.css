@@ -3,12 +3,14 @@
 
 /* ===== VARIABLES ===== */
 :root {
-  --midnight: #200432;
-  --plum: #4A0730;
-  --wine: #7A0C31;
-  --red: #CD1A30;
-  --orange: #FE8932;
+  --midnight: #40236B;
+  --plum: #351D59;
+  --wine: #4A2D7A;
+  --red: #E6000F;
+  --orange: #F29400;
   --cream: #FEE7B5;
+  --blue: #75A5E7;
+  --blue-light: #65B5D5;
 
   --bg: #fbf8f3;
   --bg-soft: #f4ede2;
@@ -169,7 +171,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   position: absolute;
   top: -30%; right: -10%;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(205,26,48,0.35), transparent 65%);
+  background: radial-gradient(circle, rgba(230,0,15,0.3), transparent 65%);
   pointer-events: none;
 }
 .hero::after {
@@ -177,7 +179,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   position: absolute;
   bottom: -40%; left: -15%;
   width: 650px; height: 650px;
-  background: radial-gradient(circle, rgba(254,137,50,0.18), transparent 60%);
+  background: radial-gradient(circle, rgba(101,181,213,0.2), transparent 60%);
   pointer-events: none;
 }
 .hero-content {
@@ -236,7 +238,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
 .btn-primary:hover {
   background: var(--orange);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(205,26,48,0.3);
+  box-shadow: 0 10px 28px rgba(230,0,15,0.3);
 }
 .btn-ghost {
   background: transparent;
@@ -351,7 +353,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
 }
 .theme-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 44px rgba(32,4,50,0.12);
+  box-shadow: 0 18px 44px rgba(64,35,107,0.12);
   border-color: transparent;
 }
 .theme-art {
@@ -384,7 +386,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   position: absolute;
   top: -50%; right: -5%;
   width: 480px; height: 480px;
-  background: radial-gradient(circle, rgba(205,26,48,0.3), transparent 65%);
+  background: radial-gradient(circle, rgba(117,165,231,0.25), transparent 65%);
   pointer-events: none;
 }
 .page-hero .hero-content { position: relative; z-index: 1; }
@@ -412,7 +414,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   width: 130px; height: 130px;
   margin: 0 auto 1.2rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--wine), var(--red));
+  background: linear-gradient(135deg, var(--midnight), var(--blue));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,7 +455,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
 .contact-info-block { margin-bottom: 2rem; }
 .contact-info-block h3 {
   font-size: 1.15rem;
-  color: var(--wine);
+  color: var(--blue);
   margin-bottom: 0.4rem;
 }
 .contact-info-block p { color: var(--text-soft); font-weight: 300; }
@@ -475,7 +477,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(254,137,50,0.15), transparent 60%);
+  background: radial-gradient(circle, rgba(242,148,0,0.15), transparent 60%);
   pointer-events: none;
 }
 .cta-band .container { position: relative; z-index: 1; }
