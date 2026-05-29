@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Care4GenID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Care4<span>GenID</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
+        <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
+        <li><a href="publications.html" class="active"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <div class="lang-switch">
+            <button data-lang="en" class="active">EN</button>
+            <button data-lang="nl">NL</button>
+          </div>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="hero-content">
+        <h1 class="lang-en">Publications</h1>
+        <h1 class="lang-nl">Publicaties</h1>
+        <p class="lang-en">Peer-reviewed articles, reports, and other publications from our research group.</p>
+        <p class="lang-nl">Peer-reviewed artikelen, rapporten en andere publicaties van onze onderzoeksgroep.</p>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS LIST -->
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow-dark">2026</span>
+        <div class="pub-list">
+          <div class="pub-card fade-in">
+            <p class="pub-meta">[Year] · <span class="pub-journal">[Journal Name]</span></p>
+            <h3>[Article Title]</h3>
+            <p>[Author A, Author B, Author C, et al.]</p>
+          </div>
+
+          <div class="pub-card fade-in">
+            <p class="pub-meta">[Year] · <span class="pub-journal">[Journal Name]</span></p>
+            <h3>[Article Title]</h3>
+            <p>[Author A, Author B, Author C, et al.]</p>
+          </div>
+        </div>
+
+        <div style="margin-top:3.5rem;">
+          <span class="eyebrow-dark">2025</span>
+          <div class="pub-list">
+            <div class="pub-card fade-in">
+              <p class="pub-meta">[Year] · <span class="pub-journal">[Journal Name]</span></p>
+              <h3>[Article Title]</h3>
+              <p>[Author A, Author B, Author C, et al.]</p>
+            </div>
+
+            <div class="pub-card fade-in">
+              <p class="pub-meta">[Year] · <span class="pub-journal">[Journal Name]</span></p>
+              <h3>[Article Title]</h3>
+              <p>[Author A, Author B, Author C, et al.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="lang-en">Looking for a specific publication?</h2>
+        <h2 class="lang-nl">Op zoek naar een specifieke publicatie?</h2>
+        <p class="lang-en">Feel free to reach out and we'll share what you need.</p>
+        <p class="lang-nl">Neem gerust contact op en wij delen graag wat u nodig heeft.</p>
+        <a href="contact.html" class="btn btn-primary"><span class="lang-en">Contact Us</span><span class="lang-nl">Neem Contact Op</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">Care4<span>GenID</span></div>
+        <p>
+          <span class="lang-en">Research for individuals with genetic neurodevelopmental disorders and intellectual disabilities.</span>
+          <span class="lang-nl">Onderzoek voor mensen met genetische neurobiologische ontwikkelingsstoornissen en verstandelijke beperkingen.</span>
+        </p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
+        <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Care4GenID. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
