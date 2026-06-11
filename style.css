@@ -80,7 +80,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   color: #fff;
   text-decoration: none;
 }
-.nav-logo span { color: var(--orange); }
+.nav-logo .accent { color: var(--orange); }
 
 .nav-links {
   display: flex;
@@ -613,7 +613,7 @@ h1, h2, h3, h4, .nav-logo, .footer-logo {
   border-bottom: 1px solid rgba(254,231,181,0.12);
 }
 .footer-logo { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.8rem; }
-.footer-logo span { color: var(--orange); }
+.footer-logo .accent { color: var(--orange); }
 .footer-content > div:first-child p {
   color: rgba(254,231,181,0.65);
   max-width: 40ch;
