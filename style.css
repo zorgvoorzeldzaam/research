@@ -1,38 +1,43 @@
 /* ================================================================
    CARE FOR RARE — style.css
    Palette:
-     --navy       #1B2A4A   (dark blue base — navbar, hero, dark sections)
-     --beige      #F5F0E8   (light warm beige — page background, cards)
-     --beige-mid  #EDE7D9   (slightly deeper beige — alternate bands)
-     --orange     #E07B2F   (accent — logo, buttons, eyebrows)
-     --blue-hl    #4A87C2   (lighter blue — highlights, tags, hl spans)
+     --navy       #1B2A4A   (dark blue — navbar, hero, dark sections, footer)
+     --beige      #F8F5F0   (lighter warm beige — all body backgrounds)
+     --beige-card #EDE7D9   (deeper beige — cards, CTA band)
+     --orange     #E07B2F   (accent — logo, buttons, 01/02/03, eyebrows)
+     --blue-hl    #4A87C2   (blue — text highlights, tags, dates, journal names)
      --white      #FFFFFF
      --text-dark  #1B2A4A
      --text-soft  #4A5568
 ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calibri:wght@400;600;700&display=swap');
+/* Calibri is not on Google Fonts — use system stack with Calibri first,
+   then close system-ui equivalents */
 
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --navy:      #1B2A4A;
-  --beige:     #F5F0E8;
-  --beige-mid: #EDE7D9;
+  --beige:     #F8F5F0;
+  --beige-card:#EDE7D9;
   --orange:    #E07B2F;
   --blue-hl:   #4A87C2;
   --white:     #FFFFFF;
   --text-dark: #1B2A4A;
   --text-soft: #4A5568;
   --radius:    8px;
-  --nav-h:     80px;
+  --nav-h:     90px;
+  /* Logo/section-heading size — used for h1 and section titles */
+  --logo-size: clamp(1.6rem, 3.5vw, 2.2rem);
 }
 
 html { scroll-behavior: smooth; }
 
+/* Single typeface throughout — Calibri with system fallbacks */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Calibri, 'Calibri', 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Arial, sans-serif;
   background: var(--beige);
   color: var(--text-dark);
   line-height: 1.7;
@@ -46,15 +51,31 @@ img { display: block; max-width: 100%; }
 html[lang="en"] .lang-nl { display: none; }
 html[lang="nl"] .lang-en { display: none; }
 
-/* ── TYPOGRAPHY ── */
+/* ── TYPOGRAPHY — single font, no serif/sans mix ── */
 h1, h2, h3, h4 {
-  font-family: 'Lora', serif;
+  font-family: Calibri, 'Calibri', 'Trebuchet MS', 'Gill Sans', Arial, sans-serif;
   color: var(--text-dark);
   line-height: 1.25;
 }
-h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 600; }
-h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; }
-h3 { font-size: 1.15rem; font-weight: 600; }
+
+/* h1: same size as logo */
+h1 {
+  font-size: var(--logo-size);
+  font-weight: 700;
+}
+
+/* Section heading titles (What do we do? / Why do we do this?) — same as logo */
+.section-heading {
+  font-size: var(--logo-size);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--text-dark);
+}
+.section-dark .section-heading { color: var(--white); }
+
+h2 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); font-weight: 600; }
+h3 { font-size: 1.1rem; font-weight: 600; }
 
 /* ── NAVBAR ── */
 .navbar {
@@ -70,7 +91,7 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,11 +99,11 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 
 .nav-logo {
-  font-family: 'Lora', serif;
-  font-size: 1.55rem;
-  font-weight: 600;
+  font-family: Calibri, 'Trebuchet MS', Arial, sans-serif;
+  font-size: var(--logo-size);
+  font-weight: 700;
   color: var(--white);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   flex-shrink: 0;
 }
 .nav-logo .accent { color: var(--orange); }
@@ -95,10 +116,11 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 
 .nav-links a {
+  font-family: Calibri, 'Trebuchet MS', Arial, sans-serif;
   color: rgba(255,255,255,0.82);
-  font-size: 0.92rem;
-  font-weight: 500;
-  padding: 0.45rem 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
   border-radius: var(--radius);
   transition: color 0.2s, background 0.2s;
 }
@@ -115,15 +137,16 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   background: rgba(255,255,255,0.1);
   border-radius: 20px;
   overflow: hidden;
-  margin-left: 0.5rem;
+  margin-left: 0.6rem;
 }
 .lang-switch button {
   border: none;
   background: transparent;
   color: rgba(255,255,255,0.65);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.35rem 0.7rem;
+  font-family: Calibri, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
   cursor: pointer;
   letter-spacing: 0.04em;
   transition: color 0.15s, background 0.15s;
@@ -146,7 +169,7 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 .nav-toggle span {
   display: block;
-  width: 24px;
+  width: 26px;
   height: 2px;
   background: var(--white);
   border-radius: 2px;
@@ -156,26 +179,30 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 .hero {
   background: var(--navy);
   color: var(--white);
-  padding: 6rem 2rem 5rem;
+  padding: 5.5rem 2rem 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 62vh;
+  text-align: center;
 }
 .hero .hero-content {
-  max-width: 760px;
+  max-width: 780px;
   width: 100%;
 }
-.hero h1 { color: var(--white); margin-bottom: 1.4rem; }
-.hero .hero-lead {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  color: rgba(255,255,255,0.9);
+.hero h1 {
+  color: var(--white);
+  margin-bottom: 1.6rem;
+  font-size: var(--logo-size);
 }
-.hero .hero-lead .accent { color: var(--orange); font-weight: 600; }
-.hero p { color: rgba(255,255,255,0.75); margin-bottom: 2rem; }
-.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero .hero-body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  color: rgba(255,255,255,0.85);
+}
+.hero .hero-body .hl-blue  { color: var(--blue-hl);  font-weight: 600; }
+.hero .hero-body .hl-orange { color: var(--orange); font-weight: 600; }
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
 
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
@@ -185,19 +212,20 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   text-align: center;
 }
 .page-hero .hero-content { max-width: 700px; margin: 0 auto; }
-.page-hero h1 { color: var(--white); margin-bottom: 1rem; }
+.page-hero h1 { color: var(--white); margin-bottom: 1rem; font-size: var(--logo-size); }
 .page-hero p {
   color: rgba(255,255,255,0.78);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* ── BUTTONS ── */
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.7rem;
+  padding: 0.75rem 1.75rem;
   border-radius: var(--radius);
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-family: Calibri, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
   cursor: pointer;
   border: 2px solid transparent;
   transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
@@ -205,6 +233,7 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 .btn:hover { transform: translateY(-1px); }
 
+/* Both primary and ghost buttons: orange resting, blue on hover/press */
 .btn-primary {
   background: var(--orange);
   color: var(--white);
@@ -218,32 +247,18 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   color: var(--white);
 }
 
+/* Ghost button on dark backgrounds — now also orange outline, blue on press */
 .btn-ghost {
   background: transparent;
   color: var(--white);
-  border-color: rgba(255,255,255,0.5);
+  border-color: var(--orange);
 }
-.btn-ghost:hover {
-  background: rgba(255,255,255,0.12);
-  border-color: var(--white);
-}
-
-/* ── INTRO BAND ── */
-.intro-band {
-  background: var(--navy);
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active {
+  background: var(--blue-hl);
+  border-color: var(--blue-hl);
   color: var(--white);
-  padding: 4rem 2rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-.intro-band .container { max-width: 820px; margin: 0 auto; }
-.intro-lead {
-  font-size: 1.18rem;
-  line-height: 1.75;
-  color: rgba(255,255,255,0.9);
-}
-.intro-lead .hl {
-  color: var(--blue-hl);
-  font-weight: 600;
 }
 
 /* ── SECTIONS ── */
@@ -254,46 +269,9 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 .section-dark h2,
 .section-dark h3 { color: var(--white); }
-.section-dark p { color: rgba(255,255,255,0.8); }
+.section-dark p { color: rgba(255,255,255,0.82); }
 
 .container { max-width: 1100px; margin: 0 auto; }
-
-/* ── EYEBROWS ── */
-.eyebrow-dark {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--orange);
-  margin-bottom: 0.6rem;
-}
-
-/* ── SECTION TITLE ── */
-.section-title {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-bottom: 2.5rem;
-  color: var(--text-dark);
-}
-.section-dark .section-title { color: var(--white); }
-
-/* ── WHO WE ARE (combined hero intro) ── */
-.who-band {
-  background: var(--navy);
-  color: var(--white);
-  padding: 0 2rem 4.5rem;
-  border-top: none;
-}
-.who-band .container { max-width: 820px; margin: 0 auto; }
-.who-band p {
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.85);
-  line-height: 1.75;
-}
-.who-band .hl {
-  color: var(--blue-hl);
-  font-weight: 600;
-}
 
 /* ── THEME GRID (What do we do?) ── */
 .theme-grid {
@@ -303,7 +281,7 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 
 .theme-card {
-  background: var(--beige-mid);
+  background: var(--beige-card);
   border: 1px solid rgba(27,42,74,0.08);
   border-radius: var(--radius);
   padding: 2rem 1.6rem;
@@ -321,12 +299,12 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   margin-bottom: 0.9rem;
 }
 .theme-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
-.theme-card p { font-size: 0.92rem; color: var(--text-soft); margin-bottom: 0.9rem; }
+.theme-card p  { font-size: 0.95rem; color: var(--text-soft); margin-bottom: 0.9rem; }
 
 /* ── TAGS ── */
 .tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -334,39 +312,37 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   border-radius: 4px;
   margin-top: 0.25rem;
 }
-.tag-blue   { background: rgba(74,135,194,0.15); color: var(--blue-hl); }
-.tag-orange { background: rgba(224,123,47,0.15);  color: var(--orange); }
-.tag-teal   { background: rgba(74,135,194,0.15);  color: var(--blue-hl); }
-.tag-red    { background: rgba(224,123,47,0.12);  color: var(--orange); }
+/* All tags use blue — consistent with text highlight color */
+.tag-blue, .tag-teal { background: rgba(74,135,194,0.15); color: var(--blue-hl); }
+.tag-orange, .tag-red { background: rgba(224,123,47,0.15); color: var(--orange); }
 
 /* ── MISSION (Why do we do this?) ── */
-.mission-list { display: flex; flex-direction: column; gap: 2rem; }
+.mission-list { display: flex; flex-direction: column; gap: 2.2rem; }
 .mission-item {
   display: flex;
   gap: 1.8rem;
   align-items: flex-start;
 }
 .mission-num {
-  font-family: 'Lora', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: var(--orange);
   flex-shrink: 0;
   min-width: 2.5rem;
   line-height: 1.1;
 }
-.mission-item h3 { margin-bottom: 0.4rem; }
-.mission-item p { color: rgba(255,255,255,0.78); font-size: 0.97rem; }
+.mission-item h3 { margin-bottom: 0.4rem; color: var(--white); }
+.mission-item p  { color: rgba(255,255,255,0.78); font-size: 0.97rem; }
 
 /* ── CTA BAND ── */
 .cta-band {
-  background: var(--beige-mid);
+  background: var(--beige-card);
   padding: 5rem 2rem;
   text-align: center;
   border-top: 1px solid rgba(27,42,74,0.08);
 }
 .cta-band h2 { margin-bottom: 0.75rem; }
-.cta-band p { color: var(--text-soft); margin-bottom: 1.75rem; font-size: 1.05rem; }
+.cta-band p  { color: var(--text-soft); margin-bottom: 1.75rem; font-size: 1.05rem; }
 
 /* ── TEAM GRID ── */
 .team-grid {
@@ -375,7 +351,7 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   gap: 1.5rem;
 }
 .team-card {
-  background: var(--beige-mid);
+  background: var(--beige-card);
   border-radius: var(--radius);
   padding: 2rem 1.5rem;
   text-align: center;
@@ -395,9 +371,9 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   margin: 0 auto 1rem;
   letter-spacing: 0.04em;
 }
-.team-card h3 { font-size: 1.05rem; margin-bottom: 0.25rem; }
-.team-role { font-size: 0.85rem; color: var(--orange); font-weight: 600; margin-bottom: 0.6rem; }
-.team-card p { font-size: 0.9rem; color: var(--text-soft); }
+.team-card h3   { font-size: 1.05rem; margin-bottom: 0.25rem; }
+.team-role      { font-size: 0.88rem; color: var(--orange); font-weight: 600; margin-bottom: 0.6rem; }
+.team-card p    { font-size: 0.92rem; color: var(--text-soft); }
 
 /* ── RESEARCH ROWS ── */
 .research-row {
@@ -418,37 +394,40 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   border-radius: var(--radius);
   flex-shrink: 0;
 }
-.bg-blue   { background: rgba(74,135,194,0.15); }
-.bg-orange { background: rgba(224,123,47,0.15); }
-.bg-teal   { background: rgba(74,135,194,0.12); }
-.bg-red    { background: rgba(224,123,47,0.12); }
+.bg-blue, .bg-teal { background: rgba(74,135,194,0.15); }
+.bg-orange, .bg-red { background: rgba(224,123,47,0.15); }
 
 .research-row h3 { margin-bottom: 0.5rem; }
-.research-row h4 { margin-top: 1.2rem; margin-bottom: 0.3rem; color: var(--orange); font-size: 0.95rem; }
+.research-row h4 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: var(--orange);
+  font-size: 0.97rem;
+}
 .trials-list { padding-left: 1.2rem; color: var(--text-soft); font-size: 0.95rem; }
 .trials-list li { margin-bottom: 0.3rem; }
 
 /* ── EVENTS ── */
 .event-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .event-card {
-  background: var(--beige-mid);
+  background: var(--beige-card);
   border-radius: var(--radius);
   padding: 1.8rem 2rem;
   border: 1px solid rgba(27,42,74,0.07);
 }
 .event-date {
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 700;
   color: var(--blue-hl);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.4rem;
 }
 .event-card h3 { margin-bottom: 0.5rem; }
-.event-card p { color: var(--text-soft); font-size: 0.94rem; margin-bottom: 0.8rem; }
+.event-card p  { color: var(--text-soft); font-size: 0.95rem; margin-bottom: 0.8rem; }
 .event-tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -461,19 +440,26 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 /* ── PUBLICATIONS ── */
 .pub-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.2rem; }
 .pub-card {
-  background: var(--beige-mid);
+  background: var(--beige-card);
   border-radius: var(--radius);
   padding: 1.5rem 1.8rem;
   border: 1px solid rgba(27,42,74,0.07);
 }
-.pub-meta {
-  font-size: 0.8rem;
-  color: var(--text-soft);
-  margin-bottom: 0.4rem;
-}
+.pub-meta    { font-size: 0.82rem; color: var(--text-soft); margin-bottom: 0.4rem; }
 .pub-journal { color: var(--blue-hl); font-weight: 600; }
 .pub-card h3 { font-size: 1rem; margin-bottom: 0.35rem; }
-.pub-card p { font-size: 0.88rem; color: var(--text-soft); }
+.pub-card p  { font-size: 0.9rem; color: var(--text-soft); }
+
+/* eyebrow label above pub year headings */
+.eyebrow-year {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
 
 /* ── CONTACT ── */
 .contact-grid {
@@ -482,13 +468,13 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   gap: 1.5rem;
 }
 .contact-info-block {
-  background: var(--beige-mid);
+  background: var(--beige-card);
   border-radius: var(--radius);
   padding: 1.8rem;
   border: 1px solid rgba(27,42,74,0.07);
 }
 .contact-info-block h3 {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -514,15 +500,14 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .footer-logo {
-  font-family: 'Lora', serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--white);
   margin-bottom: 0.75rem;
 }
 .footer-logo .accent { color: var(--orange); }
 .footer-content > div p {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   max-width: 320px;
 }
@@ -533,7 +518,7 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   gap: 0.5rem;
 }
 .footer-links a {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: rgba(255,255,255,0.65);
   transition: color 0.15s;
 }
@@ -542,17 +527,21 @@ h3 { font-size: 1.15rem; font-weight: 600; }
   max-width: 1100px;
   margin: 0 auto;
   padding: 1.2rem 0;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: rgba(255,255,255,0.4);
 }
 
 /* ── FADE-IN ── */
-.fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 .fade-in.visible { opacity: 1; transform: none; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  :root { --nav-h: 68px; }
+  :root { --nav-h: 72px; }
 
   .nav-toggle { display: flex; }
   .nav-links {
@@ -569,12 +558,12 @@ h3 { font-size: 1.15rem; font-weight: 600; }
     z-index: 99;
   }
   .nav-links.open { display: flex; }
-  .nav-links li { width: 100%; }
-  .nav-links a { display: block; padding: 0.6rem 0.5rem; font-size: 1rem; }
+  .nav-links li   { width: 100%; }
+  .nav-links a    { display: block; padding: 0.65rem 0.5rem; font-size: 1.05rem; }
 
-  .hero { padding: 4rem 1.5rem 3.5rem; min-height: auto; }
+  .hero    { padding: 4rem 1.5rem 3.5rem; }
   .section { padding: 3.5rem 1.5rem; }
-  .research-row { flex-direction: column; gap: 1rem; }
-  .mission-item { flex-direction: column; gap: 0.75rem; }
+  .research-row  { flex-direction: column; gap: 1rem; }
+  .mission-item  { flex-direction: column; gap: 0.75rem; }
   .footer-content { flex-direction: column; gap: 2rem; }
 }
