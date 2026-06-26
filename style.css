@@ -2,10 +2,10 @@
    CARE FOR RARE — style.css
    Palette:
      --navy       #1B2A4A   (dark blue — navbar, hero, dark sections, footer)
-     --beige      #F8F5F0   (lighter warm beige — all body backgrounds)
-     --beige-card #EDE7D9   (deeper beige — cards, CTA band)
+     --beige      #F8F5F0   (warm beige — all body backgrounds)
+     --beige-card #FDFBF8   (lighter than beige — cards, boxes)
      --orange     #E07B2F   (accent — logo, buttons, 01/02/03, eyebrows)
-     --blue-hl    #4A87C2   (blue — text highlights, tags, dates, journal names)
+     --blue-hl    #74A9D8   (lighter blue — text highlights, tags, dates)
      --white      #FFFFFF
      --text-dark  #1B2A4A
      --text-soft  #4A5568
@@ -21,15 +21,15 @@
 :root {
   --navy:      #1B2A4A;
   --beige:     #F8F5F0;
-  --beige-card:#EDE7D9;
+  --beige-card:#FDFBF8;
   --orange:    #E07B2F;
-  --blue-hl:   #4A87C2;
+  --blue-hl:   #74A9D8;
   --white:     #FFFFFF;
   --text-dark: #1B2A4A;
   --text-soft: #4A5568;
   --radius:    8px;
   --nav-h:     90px;
-  /* Logo/section-heading size — used for h1 and section titles */
+  /* Logo/section-heading size, used for h1 and section titles */
   --logo-size: clamp(1.6rem, 3.5vw, 2.2rem);
 }
 
@@ -200,8 +200,8 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   margin-bottom: 2rem;
   color: rgba(255,255,255,0.85);
 }
-.hero .hero-body .hl-blue  { color: var(--blue-hl);  font-weight: 600; }
-.hero .hero-body .hl-orange { color: var(--orange); font-weight: 600; }
+.hero .hero-body .hl-blue   { color: var(--blue-hl); font-weight: 600; }
+.hero .hero-body .hl-orange { color: var(--orange);  font-weight: 600; }
 .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
 
 /* ── PAGE HERO (inner pages) ── */
@@ -282,7 +282,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
 
 .theme-card {
   background: var(--beige-card);
-  border: 1px solid rgba(27,42,74,0.08);
+  border: 1px solid rgba(27,42,74,0.12);
   border-radius: var(--radius);
   padding: 2rem 1.6rem;
   transition: box-shadow 0.2s, transform 0.2s;
@@ -355,7 +355,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   border-radius: var(--radius);
   padding: 2rem 1.5rem;
   text-align: center;
-  border: 1px solid rgba(27,42,74,0.07);
+  border: 1px solid rgba(27,42,74,0.12);
 }
 .team-avatar {
   width: 64px;
@@ -413,7 +413,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   background: var(--beige-card);
   border-radius: var(--radius);
   padding: 1.8rem 2rem;
-  border: 1px solid rgba(27,42,74,0.07);
+  border: 1px solid rgba(27,42,74,0.12);
 }
 .event-date {
   font-size: 0.85rem;
@@ -443,7 +443,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   background: var(--beige-card);
   border-radius: var(--radius);
   padding: 1.5rem 1.8rem;
-  border: 1px solid rgba(27,42,74,0.07);
+  border: 1px solid rgba(27,42,74,0.12);
 }
 .pub-meta    { font-size: 0.82rem; color: var(--text-soft); margin-bottom: 0.4rem; }
 .pub-journal { color: var(--blue-hl); font-weight: 600; }
@@ -471,7 +471,7 @@ h3 { font-size: 1.1rem; font-weight: 600; }
   background: var(--beige-card);
   border-radius: var(--radius);
   padding: 1.8rem;
-  border: 1px solid rgba(27,42,74,0.07);
+  border: 1px solid rgba(27,42,74,0.12);
 }
 .contact-info-block h3 {
   font-size: 0.82rem;
