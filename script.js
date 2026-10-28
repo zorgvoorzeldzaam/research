@@ -36,3 +36,14 @@ window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
   if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 10);
 });
+
+// ===== HIDE PAST EVENTS =====
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.getElementById('upcoming-events');
+  if (!list) return;
+  const now = new Date();
+  list.querySelectorAll('[data-end]').forEach(card => {
+    if (new Date(card.dataset.end) < now) card.remove();
+  });
+  if (!list.querySelector('.event-card')) list.classList.add('is-empty');
+});
