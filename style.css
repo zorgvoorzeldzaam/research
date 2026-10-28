@@ -208,3 +208,11 @@ h4 { font-size: 1.05rem; font-weight: 700; }
   .team-card { flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* ── EVENT DETAILS ── */
+.event-date { font-weight: 700; color: var(--navy); font-size: .95rem; margin-bottom: .3rem; }
+.event-tag { display: inline-block; background: rgba(117,165,231,.25); color: var(--navy); font-size: .78rem; font-weight: 700; padding: .15rem .6rem; border-radius: 20px; }
+.btn-small { padding: .45rem 1.1rem; font-size: .92rem; margin-right: .8rem; text-decoration: none !important; }
+.event-list + .no-events { display: none; margin-top: 1rem; }
+.event-list.is-empty { display: none; }
+.event-list.is-empty + .no-events { display: block; }
