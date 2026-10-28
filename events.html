@@ -3,114 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events — Care for Rare</title>
+  <title>Events | Care for Rare</title>
+  <meta name="description" content="Research and care for people with genetic syndromes and intellectual disabilities.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar">
+  <a class="skip-link" href="#main"><span class="lang-en">Skip to content</span><span class="lang-nl">Naar de inhoud</span></a>
+  <nav class="navbar" aria-label="Main">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><span class="lang-en">Care for <span class="accent">Rare</span></span><span class="lang-nl">Zorg voor <span class="accent">zeldzaam</span></span></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
-        <li><a href="events.html" class="active"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
+        <li><a href="events.html" class="active" aria-current="page"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
         <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li>
-          <div class="lang-switch">
-            <button data-lang="en" class="active">EN</button>
-            <button data-lang="nl">NL</button>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="active">EN</button>
+            <button type="button" data-lang="nl">NL</button>
           </div>
         </li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <main>
-    <!-- PAGE HERO -->
+  <main id="main">
     <section class="page-hero">
       <div class="hero-content">
-        <h1 class="lang-en">Events</h1>
-        <h1 class="lang-nl">Evenementen</h1>
-        <p class="lang-en">Webinars, workshops, and conferences hosted or organized by Care for Rare.</p>
-        <p class="lang-nl">Webinars, workshops en congressen georganiseerd door Zorg voor Zeldzaam.</p>
+        <h1 class="lang-en">Events</h1><h1 class="lang-nl">Evenementen</h1>
+        <p class="lang-en">Webinars, workshops, and conferences by Care for Rare, and studies you can take part in.</p><p class="lang-nl">Webinars, workshops en congressen van Zorg voor zeldzaam, en studies waaraan u kunt deelnemen.</p>
       </div>
     </section>
 
-    <!-- UPCOMING EVENTS -->
     <section class="section">
-      <div class="container">
-        <h2 class="section-title lang-en">Upcoming events.</h2>
-        <h2 class="section-title lang-nl">Aankomende evenementen.</h2>
-
+      <div class="container narrow">
+        <h2 class="lang-en section-title">Take part in research</h2><h2 class="lang-nl section-title">Doe mee aan onderzoek</h2>
         <div class="event-list">
-          <div class="event-card fade-in">
-            <p class="event-date">[Date] 2026</p>
-            <h3>[Event title]</h3>
-            <p class="lang-en">[Brief description of the event: topic, format, and who it is for.]</p>
-            <p class="lang-nl">[Korte beschrijving van het evenement: onderwerp, format en doelgroep.]</p>
-            <span class="event-tag lang-en">Webinar</span>
-            <span class="event-tag lang-nl">Webinar</span>
-          </div>
-
-          <div class="event-card fade-in">
-            <p class="event-date">[Date] 2026</p>
-            <h3>[Event title]</h3>
-            <p class="lang-en">[Brief description of the event: topic, format, and who it is for.]</p>
-            <p class="lang-nl">[Korte beschrijving van het evenement: onderwerp, format en doelgroep.]</p>
-            <span class="event-tag lang-en">Workshop</span>
-            <span class="event-tag lang-nl">Workshop</span>
-          </div>
+          <article class="event-card">
+            <h3>CBD4RARE <a class="badge" href="mailto:f.hosman@amsterdamumc.nl"><span class="lang-en">Now recruiting!</span><span class="lang-nl">Deelnemers gezocht!</span></a></h3>
+            <p class="lang-en">International N-of-1 trial on the effectiveness of CBD oil for severe behavioral problems in children and adults with tuberous sclerosis complex (TSC), fragile X syndrome (FXS), and Sanfilippo syndrome (MPS III).</p><p class="lang-nl">Internationale N-of-1-trial naar de effectiviteit van CBD-olie bij ernstige gedragsproblemen bij kinderen en volwassenen met tubereuze sclerose complex (TSC), fragiele-X-syndroom (FXS) en de ziekte van Sanfilippo (MPS III).</p>
+            <p class="project-meta"><span class="lang-en">Interested? Email</span><span class="lang-nl">Geïnteresseerd? Mail naar</span> <a href="mailto:f.hosman@amsterdamumc.nl">f.hosman@amsterdamumc.nl</a>. <a href="research.html#cbd4rare"><span class="lang-en">More about this project</span><span class="lang-nl">Meer over dit project</span></a></p>
+          </article>
+          <article class="event-card">
+            <h3>PROM4GenID <a class="badge" href="mailto:a.r.hijlkema@amsterdamumc.nl"><span class="lang-en">Now recruiting!</span><span class="lang-nl">Deelnemers gezocht!</span></a></h3>
+            <p class="lang-en">We are looking for people with genetic conditions and/or intellectual disabilities who can and want to complete questionnaires themselves, and their parents.</p><p class="lang-nl">We zoeken mensen met genetische aandoeningen en/of verstandelijke beperkingen die zelf vragenlijsten kunnen en willen invullen, en hun ouders.</p>
+            <p class="project-meta"><span class="lang-en">Interested? Email</span><span class="lang-nl">Geïnteresseerd? Mail naar</span> <a href="mailto:a.r.hijlkema@amsterdamumc.nl">a.r.hijlkema@amsterdamumc.nl</a>. <a href="research.html#prom4genid"><span class="lang-en">More about this project</span><span class="lang-nl">Meer over dit project</span></a></p>
+          </article>
+          <article class="event-card">
+            <h3>GAS4GenID <a class="badge" href="mailto:a.r.hijlkema@amsterdamumc.nl"><span class="lang-en">Now recruiting!</span><span class="lang-nl">Deelnemers gezocht!</span></a></h3>
+            <p class="lang-en">We are looking for clinicians working with people with genetic conditions and/or intellectual disabilities who would like to apply Goal Attainment Scaling in their care.</p><p class="lang-nl">We zoeken behandelaren van mensen met genetische aandoeningen en/of verstandelijke beperkingen die Goal Attainment Scaling willen toepassen in hun zorg.</p>
+            <p class="project-meta"><span class="lang-en">Interested? Email</span><span class="lang-nl">Geïnteresseerd? Mail naar</span> <a href="mailto:a.r.hijlkema@amsterdamumc.nl">a.r.hijlkema@amsterdamumc.nl</a>. <a href="research.html#gas4genid"><span class="lang-en">More about this project</span><span class="lang-nl">Meer over dit project</span></a></p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PAST EVENTS -->
-    <section class="section" style="padding-top:0;">
-      <div class="container">
-        <h2 class="section-title lang-en">Past events.</h2>
-        <h2 class="section-title lang-nl">Eerdere evenementen.</h2>
-
-        <div class="event-list">
-          <div class="event-card fade-in" style="opacity:0.75;">
-            <p class="event-date">[Date] 2025</p>
-            <h3>[Event title]</h3>
-            <p class="lang-en">[Brief description of the past event.]</p>
-            <p class="lang-nl">[Korte beschrijving van het eerdere evenement.]</p>
-            <span class="event-tag lang-en">Conference</span>
-            <span class="event-tag lang-nl">Congres</span>
-          </div>
-        </div>
+    <section class="section section-tight">
+      <div class="container narrow">
+        <h2 class="lang-en section-title">Events</h2><h2 class="lang-nl section-title">Evenementen</h2>
+        <p class="lang-en empty-state">There are no upcoming events at the moment. Would you like to stay informed? Get in touch.</p><p class="lang-nl empty-state">Er staan op dit moment geen evenementen gepland. Wilt u op de hoogte blijven? Neem contact met ons op.</p>
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="lang-en">Would you like to attend or co-host an event?</h2>
-        <h2 class="lang-nl">Wilt u een evenement bijwonen of mede-organiseren?</h2>
-        <p class="lang-en">Reach out to discuss upcoming opportunities.</p>
-        <p class="lang-nl">Neem contact op om mogelijkheden te bespreken.</p>
+        <h2 class="lang-en">Would you like to attend or co-host an event?</h2><h2 class="lang-nl">Wilt u een evenement bijwonen of mede-organiseren?</h2>
+        <p class="lang-en">Reach out to discuss upcoming opportunities.</p><p class="lang-nl">Neem contact op om mogelijkheden te bespreken.</p>
         <a href="contact.html" class="btn btn-primary"><span class="lang-en">Get in touch</span><span class="lang-nl">Neem contact op</span></a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-content">
       <div>
         <div class="footer-logo"><span class="lang-en">Care for <span class="accent">Rare</span></span><span class="lang-nl">Zorg voor <span class="accent">zeldzaam</span></span></div>
-        <p>
-          <span class="lang-en">Research for individuals with intellectual disabilities and rare genetic conditions.</span>
-          <span class="lang-nl">Onderzoek voor mensen met verstandelijke beperkingen en zeldzame genetische aandoeningen.</span>
-        </p>
+        <p><span class="lang-en">Research and care for people with genetic syndromes and intellectual disabilities.</span><span class="lang-nl">Onderzoek en zorg voor mensen met genetische syndromen en verstandelijke beperkingen.</span></p>
       </div>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
@@ -122,7 +95,7 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Care for Rare. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
+      <p>&copy; 2026 <span class="lang-en">Care for Rare</span><span class="lang-nl">Zorg voor zeldzaam</span>. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
     </div>
   </footer>
 

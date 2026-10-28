@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Care for Rare</title>
+  <title>Contact | Care for Rare</title>
+  <meta name="description" content="Research and care for people with genetic syndromes and intellectual disabilities.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar">
+  <a class="skip-link" href="#main"><span class="lang-en">Skip to content</span><span class="lang-nl">Naar de inhoud</span></a>
+  <nav class="navbar" aria-label="Main">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><span class="lang-en">Care for <span class="accent">Rare</span></span><span class="lang-nl">Zorg voor <span class="accent">zeldzaam</span></span></a>
       <ul class="nav-links">
@@ -18,94 +18,61 @@
         <li><a href="research.html"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
         <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
         <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
         <li>
-          <div class="lang-switch">
-            <button data-lang="en" class="active">EN</button>
-            <button data-lang="nl">NL</button>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="active">EN</button>
+            <button type="button" data-lang="nl">NL</button>
           </div>
         </li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <main>
-    <!-- PAGE HERO -->
+  <main id="main">
     <section class="page-hero">
       <div class="hero-content">
-        <h1>Contact</h1>
-        <p class="lang-en">Interested in collaborating, joining our team, or learning more about our research? Get in touch.</p>
-        <p class="lang-nl">Geïnteresseerd in samenwerking, wilt u zich bij ons team aansluiten, of wilt u meer weten over ons onderzoek? Neem contact met ons op.</p>
+        <h1 class="lang-en">Contact</h1><h1 class="lang-nl">Contact</h1>
+        <p class="lang-en">Interested in collaborating, joining our team, or learning more about our research? Get in touch.</p><p class="lang-nl">Geïnteresseerd in samenwerking, wilt u zich bij ons team aansluiten, of wilt u meer weten over ons onderzoek? Neem contact met ons op.</p>
       </div>
     </section>
 
-    <!-- CONTACT CONTENT -->
     <section class="section">
       <div class="container">
-        <span class="eyebrow-dark lang-en">Get in touch</span>
-        <span class="eyebrow-dark lang-nl">Neem contact op</span>
-        <h2 class="section-title lang-en">We'd love to hear from you.</h2>
-        <h2 class="section-title lang-nl">Wij horen graag van u.</h2>
-
         <div class="contact-grid">
-          <div class="contact-info-block fade-in">
-            <h3>Email</h3>
-            <p>[e-mail]</p>
+          <div class="contact-info-block">
+            <h2 class="lang-en">Email</h2><h2 class="lang-nl">E-mail</h2>
+            <p><a href="mailto:a.m.vaneeghen@amsterdamumc.nl">a.m.vaneeghen@amsterdamumc.nl</a></p>
           </div>
-
-          <div class="contact-info-block fade-in">
-            <h3>
-              <span class="lang-en">Address</span>
-              <span class="lang-nl">Adres</span>
-            </h3>
-            <p>
-              [Department name]<br>
-              [Institution name]<br>
-              [Street address]<br>
-              [City, Postal code]<br>
-              <span class="lang-en">The Netherlands</span>
-              <span class="lang-nl">Nederland</span>
-            </p>
+          <div class="contact-info-block">
+            <h2 class="lang-en">Address</h2><h2 class="lang-nl">Adres</h2>
+            <p>Amsterdam UMC<br>Amsterdam<br><span class="lang-en">The Netherlands</span><span class="lang-nl">Nederland</span></p>
           </div>
-
-          <div class="contact-info-block fade-in">
-            <h3>
-              <span class="lang-en">Collaboration</span>
-              <span class="lang-nl">Samenwerking</span>
-            </h3>
-            <p>
-              <span class="lang-en">We welcome collaboration with researchers, clinicians, and patient organizations. Please reach out via email to discuss opportunities.</span>
-              <span class="lang-nl">Wij verwelkomen samenwerking met onderzoekers, clinici en patiëntenorganisaties. Neem contact op via e-mail om mogelijkheden te bespreken.</span>
-            </p>
+          <div class="contact-info-block">
+            <h2 class="lang-en">Collaboration</h2><h2 class="lang-nl">Samenwerking</h2>
+            <p class="lang-en">We welcome collaboration with researchers, clinicians, and patient organizations. Please reach out via email to discuss opportunities.</p><p class="lang-nl">Wij verwelkomen samenwerking met onderzoekers, clinici en patiëntenorganisaties. Neem contact op via e-mail om mogelijkheden te bespreken.</p>
           </div>
-
-          <div class="contact-info-block fade-in">
-            <h3>
-              <span class="lang-en">Student opportunities</span>
-              <span class="lang-nl">Stageplekken</span>
-            </h3>
-            <p>
-              <span class="lang-en">Interested in a research internship or thesis project? We regularly host master's students. Contact us with your CV and a brief description of your interests.</span>
-              <span class="lang-nl">Geïnteresseerd in een onderzoeksstage of afstudeerproject? Wij begeleiden regelmatig masterstudenten. Neem contact met ons op met uw CV en een korte beschrijving van uw interesses.</span>
-            </p>
+          <div class="contact-info-block">
+            <h2 class="lang-en">Student opportunities</h2><h2 class="lang-nl">Stageplekken</h2>
+            <p class="lang-en">Interested in a research internship or thesis project? We regularly host master's students. Contact us with your CV and a brief description of your interests.</p><p class="lang-nl">Geïnteresseerd in een onderzoeksstage of afstudeerproject? Wij begeleiden regelmatig masterstudenten. Neem contact met ons op met uw cv en een korte beschrijving van uw interesses.</p>
+          </div>
+          <div class="contact-info-block">
+            <h2 class="lang-en">Taking part in research</h2><h2 class="lang-nl">Deelnemen aan onderzoek</h2>
+            <p class="lang-en">See which studies are looking for participants on the <a href="events.html">Events</a> page.</p><p class="lang-nl">Bekijk welke studies deelnemers zoeken op de pagina <a href="events.html">Evenementen</a>.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-content">
       <div>
         <div class="footer-logo"><span class="lang-en">Care for <span class="accent">Rare</span></span><span class="lang-nl">Zorg voor <span class="accent">zeldzaam</span></span></div>
-        <p>
-          <span class="lang-en">Research for individuals with intellectual disabilities and rare genetic conditions.</span>
-          <span class="lang-nl">Onderzoek voor mensen met verstandelijke beperkingen en zeldzame genetische aandoeningen.</span>
-        </p>
+        <p><span class="lang-en">Research and care for people with genetic syndromes and intellectual disabilities.</span><span class="lang-nl">Onderzoek en zorg voor mensen met genetische syndromen en verstandelijke beperkingen.</span></p>
       </div>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
@@ -117,7 +84,7 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Care for Rare. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
+      <p>&copy; 2026 <span class="lang-en">Care for Rare</span><span class="lang-nl">Zorg voor zeldzaam</span>. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
     </div>
   </footer>
 

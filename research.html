@@ -3,128 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research — Care for Rare</title>
+  <title>Research | Care for Rare</title>
+  <meta name="description" content="Research and care for people with genetic syndromes and intellectual disabilities.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar">
+  <a class="skip-link" href="#main"><span class="lang-en">Skip to content</span><span class="lang-nl">Naar de inhoud</span></a>
+  <nav class="navbar" aria-label="Main">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><span class="lang-en">Care for <span class="accent">Rare</span></span><span class="lang-nl">Zorg voor <span class="accent">zeldzaam</span></span></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="research.html" class="active"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
+        <li><a href="research.html" class="active" aria-current="page"><span class="lang-en">Research</span><span class="lang-nl">Onderzoek</span></a></li>
         <li><a href="events.html"><span class="lang-en">Events</span><span class="lang-nl">Evenementen</span></a></li>
         <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-nl">Publicaties</span></a></li>
         <li><a href="contact.html">Contact</a></li>
         <li>
-          <div class="lang-switch">
-            <button data-lang="en" class="active">EN</button>
-            <button data-lang="nl">NL</button>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="active">EN</button>
+            <button type="button" data-lang="nl">NL</button>
           </div>
         </li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <main>
-    <!-- PAGE HERO -->
+  <main id="main">
     <section class="page-hero">
       <div class="hero-content">
-        <h1 class="lang-en">Research</h1>
-        <h1 class="lang-nl">Onderzoek</h1>
-        <p class="lang-en">Our research spans the full path from clinical care to guidelines, organized around four core themes.</p>
-        <p class="lang-nl">Ons onderzoek omvat het volledige traject van klinische zorg tot richtlijnen, georganiseerd rond vier kernthema's.</p>
+        <h1 class="lang-en">Research</h1><h1 class="lang-nl">Onderzoek</h1>
+        <p class="lang-en">Our research is rooted in our clinical care and organized around four research lines: natural history, trials, outcome measures, and guidelines.</p><p class="lang-nl">Ons onderzoek is verbonden met onze klinische zorg en georganiseerd rond vier onderzoekslijnen: natuurlijk beloop, trials, uitkomstmaten en richtlijnen.</p>
       </div>
     </section>
 
-    <!-- RESEARCH THEMES -->
     <section class="section">
       <div class="container">
-
-        <!-- 1. Clinical Care -->
-        <div class="research-row fade-in" id="clinical-care">
-          <div class="research-icon bg-blue">🩺</div>
-          <div>
-            <h3 class="lang-en">Clinical care</h3>
-            <h3 class="lang-nl">Klinische zorg</h3>
-            <p class="lang-en">We provide and study clinical care for individuals with intellectual disabilities and rare genetic conditions. This includes care for conditions such as dementia and other neuropsychiatric challenges, with a focus on improving quality of life and daily functioning.</p>
-            <p class="lang-nl">Wij bieden en bestuderen klinische zorg voor mensen met verstandelijke beperkingen en zeldzame genetische aandoeningen. Dit omvat zorg voor aandoeningen zoals dementie en andere neuropsychiatrische uitdagingen, met een focus op het verbeteren van kwaliteit van leven en dagelijks functioneren.</p>
+        <div class="research-row" id="clinical-care">
+          <div class="research-icon bg-blue" aria-hidden="true">🩺</div>
+          <div class="research-body">
+            <h2 class="lang-en">Clinical care</h2><h2 class="lang-nl">Klinische zorg</h2>
+            <p class="lang-en">We provide and study clinical care for people with genetic neurodevelopmental disorders and intellectual disabilities. This includes care for dementia and other neuropsychiatric problems, aimed at improving quality of life and daily functioning.</p><p class="lang-nl">Wij bieden en bestuderen klinische zorg voor mensen met genetische neurobiologische ontwikkelingsstoornissen en verstandelijke beperkingen. Dit omvat zorg bij onder meer dementie en andere neuropsychiatrische problemen, met als doel de kwaliteit van leven en het dagelijks functioneren te verbeteren.</p>
+            <p class="lang-en list-intro">Our care is provided at, among others:</p><p class="lang-nl list-intro">Onze zorg vindt onder meer plaats bij:</p>
+            <ul class="plain-list"><li><span class="lang-en">Cog-VG outpatient clinic</span><span class="lang-nl">Cog-VG poli</span></li><li><span class="lang-en">Psych-VB outpatient clinic</span><span class="lang-nl">Psych-VB poli</span></li><li><span class="lang-en">Expertise Center for Genetic Syndromes, 's Heeren Loo</span><span class="lang-nl">Expertisecentrum genetische syndromen, 's Heeren Loo</span></li><li><span class="lang-en">Clinical Genetics expertise centers, Amsterdam UMC</span><span class="lang-nl">Expertisecentra klinische genetica, Amsterdam UMC</span></li></ul>
           </div>
         </div>
-
-        <!-- 2. Trials -->
-        <div class="research-row fade-in" id="trials">
-          <div class="research-icon bg-orange">🔬</div>
-          <div>
-            <h3 class="lang-en">Trials for neuropsychiatric outcomes</h3>
-            <h3 class="lang-nl">Trials voor neuropsychiatrische uitkomsten</h3>
-            <p class="lang-en">We conduct and participate in clinical trials aimed at improving neuropsychiatric outcomes for individuals with intellectual disabilities. Our trials investigate interventions that can meaningfully change development, behaviour, and wellbeing.</p>
-            <p class="lang-nl">Wij voeren klinische trials uit en nemen deel aan trials gericht op het verbeteren van neuropsychiatrische uitkomsten voor mensen met verstandelijke beperkingen. Onze trials onderzoeken interventies die de ontwikkeling, het gedrag en het welzijn wezenlijk kunnen veranderen.</p>
-
-            <h4 style="font-size:1rem; color:var(--orange); margin-top:1.4rem; margin-bottom:0.4rem;">
-              <span class="lang-en">Current trials</span>
-              <span class="lang-nl">Lopende trials</span>
-            </h4>
-            <ul class="trials-list">
-              <li>Trial 1</li>
-              <li>Trial 2</li>
-              <li>Trial 3</li>
-            </ul>
+        <div class="research-row" id="natural-history">
+          <div class="research-icon bg-teal" aria-hidden="true">🧭</div>
+          <div class="research-body">
+            <h2 class="lang-en">Natural history</h2><h2 class="lang-nl">Natuurlijk beloop</h2>
+            <p class="lang-en">We follow the health of people with genetic syndromes across the lifespan, to understand how problems such as depression, regression, and dementia arise and develop, and which factors play a role.</p><p class="lang-nl">Wij volgen de gezondheid van mensen met genetische syndromen over de levensloop. Zo krijgen we zicht op hoe problemen zoals depressie, regressie en dementie ontstaan en verlopen, en welke factoren daarbij een rol spelen.</p>
+            <article class="project" id="team-down">
+              <h4><span class="lang-en">TEAM DOWN: depression and DSRD</span><span class="lang-nl">TEAM DOWN: depressie en DSRD</span></h4>
+              <p class="lang-en">Prospective observational study on the natural course of depression and Down Syndrome Regression Disorder (DSRD) in people with Down syndrome, and on the effectiveness of treatments. A qualitative study explores the experiences of people with Down syndrome, parents, and healthcare professionals.</p><p class="lang-nl">Prospectieve observationele studie naar het natuurlijk beloop van depressie en Down Syndrome Regression Disorder (DSRD) bij mensen met downsyndroom, en naar de effectiviteit van behandelingen. Een kwalitatieve studie brengt de ervaringen van mensen met downsyndroom, ouders en zorgprofessionals in kaart.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Lindsey Koster<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:l.e.a.koster@amsterdamumc.nl">l.e.a.koster@amsterdamumc.nl</a></p>
+            </article>
+            <article class="project" id="neurological-aging">
+              <h4><span class="lang-en">Neurological aging in (Gen)ID</span><span class="lang-nl">Neurologische veroudering bij (Gen)ID</span></h4>
+              <p class="lang-en">Research on aging, dementia, and biomarkers of neurological damage in people with genetic neurodevelopmental disorders, including a systematic review of blood biomarkers for Alzheimer's disease and neurodegeneration in people with intellectual disabilities.</p><p class="lang-nl">Onderzoek naar veroudering, dementie en biomarkers voor neurologische schade bij mensen met genetische ontwikkelingsstoornissen, waaronder een systematische review naar bloedbiomarkers voor de ziekte van Alzheimer en neurodegeneratie bij mensen met verstandelijke beperkingen.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Hadassa Kwetsie, Lindsey Koster<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:a.m.vaneeghen@amsterdamumc.nl">a.m.vaneeghen@amsterdamumc.nl</a></p>
+            </article>
           </div>
         </div>
-
-        <!-- 3. Outcome Measures -->
-        <div class="research-row fade-in" id="outcomes">
-          <div class="research-icon bg-teal">📊</div>
-          <div>
-            <h3 class="lang-en">Outcome measures</h3>
-            <h3 class="lang-nl">Uitkomstmaten</h3>
-            <p class="lang-en">Finding suitable outcomes and outcome measures for use in care and research for this population is a central challenge. We study the validity of existing instruments, develop new tools where gaps exist, and focus on harmonizing outcome measures across studies, so that evidence can be compared, combined, and trusted.</p>
-            <p class="lang-nl">Het vinden van geschikte uitkomsten en uitkomstmaten voor gebruik in zorg en onderzoek voor deze populatie is een centrale uitdaging. Wij bestuderen de validiteit van bestaande instrumenten, ontwikkelen nieuwe instrumenten waar lacunes bestaan, en richten ons op het harmoniseren van uitkomstmaten tussen studies, zodat bewijs vergeleken, gecombineerd en vertrouwd kan worden.</p>
+        <div class="research-row" id="trials">
+          <div class="research-icon bg-orange" aria-hidden="true">🔬</div>
+          <div class="research-body">
+            <h2 class="lang-en">Trials for neuropsychiatric outcomes</h2><h2 class="lang-nl">Trials voor neuropsychiatrische uitkomsten</h2>
+            <p class="lang-en">We conduct and participate in clinical trials aimed at improving neuropsychiatric outcomes for people with genetic neurodevelopmental disorders. Our trials investigate interventions that can meaningfully improve development, behavior, and wellbeing.</p><p class="lang-nl">Wij voeren klinische trials uit en nemen deel aan trials gericht op het verbeteren van neuropsychiatrische uitkomsten voor mensen met genetische neurobiologische ontwikkelingsstoornissen. Met onze trials onderzoeken wij interventies die de ontwikkeling, het gedrag en het welzijn wezenlijk kunnen verbeteren.</p>
+            <article class="project" id="cbd4rare">
+              <h4>CBD4RARE <a class="badge" href="mailto:f.hosman@amsterdamumc.nl"><span class="lang-en">Now recruiting!</span><span class="lang-nl">Deelnemers gezocht!</span></a></h4>
+              <p class="lang-en">International N-of-1 trial on the effectiveness of CBD oil for severe behavioral problems in children and adults with tuberous sclerosis complex (TSC), fragile X syndrome (FXS), and Sanfilippo syndrome (MPS III).</p><p class="lang-nl">Internationale N-of-1-trial naar de effectiviteit van CBD-olie bij ernstige gedragsproblemen bij kinderen en volwassenen met tubereuze sclerose complex (TSC), fragiele-X-syndroom (FXS) en de ziekte van Sanfilippo (MPS III).</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Floortje Hosman, Kim van Veldhuizen<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:f.hosman@amsterdamumc.nl">f.hosman@amsterdamumc.nl</a></p>
+              <details class="more">
+                <summary><span class="lang-en">Read more</span><span class="lang-nl">Lees meer</span></summary>
+                <div class="lang-nl"><p>Mensen met zeldzame genetische syndromen en/of een verstandelijke beperking hebben vaak last van angst of slaapproblemen. Dat kan zich uiten in gedragsproblemen zoals agitatie, agressie en zelfbeschadigend gedrag. Vanuit cliënten en hun naasten is er veel vraag om de werking van CBD-olie bij deze klachten te onderzoeken. Eerder onderzoek laat positieve effecten zien van CBD-olie bij epilepsie binnen deze doelgroep, met beperkte bijwerkingen.</p><p>CBD4RARE onderzoekt of CBD-olie effectief is bij de behandeling van ernstige gedragsproblemen bij kinderen en volwassenen met TSC, FXS en MPS III. Het is een internationale studie, in samenwerking met EpiCom.</p><p>De studie heeft een N-of-1-opzet: iedere deelnemer krijgt meerdere keren afwisselend CBD-olie en placebo. Zo kunnen we per persoon bekijken of CBD-olie effect heeft, en de resultaten ook op groepsniveau analyseren. De studie is gerandomiseerd, geblindeerd en placebogecontroleerd, en duurt ongeveer een jaar.</p></div>
+                <div class="lang-en"><p>People with rare genetic syndromes and/or intellectual disabilities often experience anxiety or sleep problems. These can show as behavioral problems such as agitation, aggression, and self-injurious behavior. Clients and their families have strongly requested research into the effects of CBD oil on these symptoms. Previous research shows positive effects of CBD oil on epilepsy in this population, with limited side effects.</p><p>CBD4RARE investigates whether CBD oil is effective in treating severe behavioral problems in children and adults with TSC, FXS, and MPS III. It is an international study, in collaboration with EpiCom.</p><p>The study uses an N-of-1 design: each participant alternately receives CBD oil and placebo several times. This allows us to assess the effect of CBD oil per person, while also analyzing results at group level. The study is randomized, blinded, and placebo-controlled, and lasts about one year.</p></div>
+              </details>
+            </article>
           </div>
         </div>
-
-        <!-- 4. Guidelines -->
-        <div class="research-row fade-in" id="guidelines">
-          <div class="research-icon bg-red">📋</div>
-          <div>
-            <h3 class="lang-en">Developing guidelines</h3>
-            <h3 class="lang-nl">Richtlijnen ontwikkelen</h3>
-            <p class="lang-en">Evidence only matters when it reaches practice. We develop clinical guidelines that translate research findings into practical, evidence-based recommendations for the care of individuals with intellectual disabilities and rare genetic conditions.</p>
-            <p class="lang-nl">Bewijs doet er pas toe wanneer het de praktijk bereikt. Wij ontwikkelen klinische richtlijnen die onderzoeksbevindingen vertalen naar praktische, evidence-based aanbevelingen voor de zorg voor mensen met verstandelijke beperkingen en zeldzame genetische aandoeningen.</p>
+        <div class="research-row" id="outcomes">
+          <div class="research-icon bg-blue" aria-hidden="true">📊</div>
+          <div class="research-body">
+            <h2 class="lang-en">Outcome measures</h2><h2 class="lang-nl">Uitkomstmaten</h2>
+            <p class="lang-en">Finding suitable outcomes and outcome measures for use in care and research for this population is a challenge. We study the validity of existing instruments, develop new instruments where gaps exist, and focus on harmonizing outcome measures across studies, so that evidence can be compared, combined, and trusted.</p><p class="lang-nl">Het vinden van geschikte uitkomsten en uitkomstmaten voor gebruik in zorg en onderzoek voor deze populatie is een uitdaging. Wij bestuderen de validiteit van bestaande instrumenten, ontwikkelen nieuwe instrumenten waar lacunes bestaan, en richten ons op het harmoniseren van uitkomstmaten tussen studies, zodat bewijs vergeleken, gecombineerd en vertrouwd kan worden.</p>
+            <article class="project" id="cos4tsc">
+              <h4>COS4TSC</h4>
+              <p class="lang-en">Development of a core outcome set (COS) and core outcome measure set (COMS) for tuberous sclerosis complex (TSC): an agreed set of outcomes and measurement instruments to harmonize TSC care and research.</p><p class="lang-nl">Ontwikkeling van een core outcome set (COS) en core outcome measure set (COMS) voor tubereuze sclerose complex (TSC): een afgestemde set van uitkomsten en meetinstrumenten om TSC-zorg en -onderzoek te harmoniseren.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Floortje Hosman<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:f.hosman@amsterdamumc.nl">f.hosman@amsterdamumc.nl</a></p>
+            </article>
+            <article class="project" id="prom4genid">
+              <h4>PROM4GenID <a class="badge" href="mailto:a.r.hijlkema@amsterdamumc.nl"><span class="lang-en">Now recruiting!</span><span class="lang-nl">Deelnemers gezocht!</span></a></h4>
+              <p class="lang-en">Study of the reliability, validity, and responsiveness of the co-created GenID core PROM set: questionnaires (PROMs) for people with genetic conditions and/or intellectual disabilities, including agreement between self-report and proxy-report.</p><p class="lang-nl">Onderzoek naar de betrouwbaarheid, validiteit en responsiviteit van de samen ontwikkelde GenID core PROM-set: vragenlijsten (PROMs) voor mensen met genetische aandoeningen en/of verstandelijke beperkingen, inclusief de overeenstemming tussen zelfrapportage en rapportage door naasten.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Alannah Hijlkema<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:a.r.hijlkema@amsterdamumc.nl">a.r.hijlkema@amsterdamumc.nl</a></p>
+            </article>
+            <article class="project" id="gas4genid">
+              <h4>GAS4GenID <a class="badge" href="mailto:a.r.hijlkema@amsterdamumc.nl"><span class="lang-en">Now recruiting!</span><span class="lang-nl">Deelnemers gezocht!</span></a></h4>
+              <p class="lang-en">Study of the suitability of Goal Attainment Scaling (GAS): a personalized measurement method in which outcomes are based on personal goals.</p><p class="lang-nl">Onderzoek naar de geschiktheid van Goal Attainment Scaling (GAS): een gepersonaliseerde meetmethode waarbij uitkomsten gebaseerd zijn op persoonlijke doelen.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Alannah Hijlkema<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:a.r.hijlkema@amsterdamumc.nl">a.r.hijlkema@amsterdamumc.nl</a></p>
+            </article>
+            <article class="project" id="erdera">
+              <h4>ERDERA</h4>
+              <p class="lang-en">International project on the validity of the GenID PROM set for people with genetic conditions and/or intellectual disabilities in an international context.</p><p class="lang-nl">Internationaal project naar de validiteit van de GenID PROM-set voor mensen met genetische aandoeningen en/of verstandelijke beperkingen in een internationale context.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Alannah Hijlkema, Ellen Elsman, Maud van Muilekom, Agnies van Eeghen<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:a.r.hijlkema@amsterdamumc.nl">a.r.hijlkema@amsterdamumc.nl</a></p>
+            </article>
           </div>
         </div>
-
+        <div class="research-row" id="guidelines">
+          <div class="research-icon bg-red" aria-hidden="true">📋</div>
+          <div class="research-body">
+            <h2 class="lang-en">Guidelines</h2><h2 class="lang-nl">Richtlijnen</h2>
+            <p class="lang-en">Evidence only matters when it reaches practice. We develop clinical guidelines that translate research findings into practical, evidence-based recommendations for the care of people with genetic neurodevelopmental disorders and intellectual disabilities.</p><p class="lang-nl">Bewijs doet er pas toe wanneer het de praktijk bereikt. Wij ontwikkelen klinische richtlijnen die onderzoeksbevindingen vertalen naar praktische, evidence-based aanbevelingen voor de zorg voor mensen met genetische neurobiologische ontwikkelingsstoornissen en verstandelijke beperkingen.</p>
+            <article class="project" id="ern-ithaca">
+              <h4><span class="lang-en">ERN ITHACA guidelines</span><span class="lang-nl">Richtlijnen ERN ITHACA</span></h4>
+              <p class="lang-en">Within the European Reference Network ERN ITHACA, we develop international guidelines for rare genetic syndromes and intellectual disabilities.</p><p class="lang-nl">Binnen het Europees Referentienetwerk ERN ITHACA ontwikkelen we internationale richtlijnen voor zeldzame genetische syndromen en verstandelijke beperkingen.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Agnies van Eeghen, Mirthe Klein Haneveld<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:a.m.vaneeghen@amsterdamumc.nl">a.m.vaneeghen@amsterdamumc.nl</a><br><span class="lang-en">Website</span><span class="lang-nl">Website</span>: <a href="https://ern-ithaca.eu" target="_blank" rel="noopener">ern-ithaca.eu</a></p>
+            </article>
+            <article class="project" id="down-syndrome-guidelines">
+              <h4><span class="lang-en">Guidelines for adults with Down syndrome</span><span class="lang-nl">Richtlijnen volwassenen met downsyndroom</span></h4>
+              <p class="lang-en">Development of multidisciplinary guidelines for the medical care of adults with Down syndrome, addressing topics such as dementia, depression, and continuity of care.</p><p class="lang-nl">Ontwikkeling van multidisciplinaire richtlijnen voor de medische zorg voor volwassenen met downsyndroom, met onder meer aandacht voor dementie, depressie en continuïteit van zorg.</p>
+              <p class="project-meta"><span class="lang-en">Who</span><span class="lang-nl">Wie</span>: Lindsey Koster<br><span class="lang-en">More information</span><span class="lang-nl">Meer informatie</span>: <a href="mailto:l.e.a.koster@amsterdamumc.nl">l.e.a.koster@amsterdamumc.nl</a></p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="lang-en">Would you like to collaborate on a project?</h2>
-        <h2 class="lang-nl">Wilt u samenwerken aan een project?</h2>
-        <p class="lang-en">We are always open to new partnerships and research collaborations.</p>
-        <p class="lang-nl">Wij staan altijd open voor nieuwe samenwerkingen en onderzoekspartnerschappen.</p>
+        <h2 class="lang-en">Would you like to collaborate on a project?</h2><h2 class="lang-nl">Samenwerken aan een project?</h2>
+        <p class="lang-en">We are always open to new partnerships and research collaborations.</p><p class="lang-nl">Wij staan altijd open voor nieuwe samenwerkingen en onderzoekspartnerschappen.</p>
         <a href="contact.html" class="btn btn-primary"><span class="lang-en">Get in touch</span><span class="lang-nl">Neem contact op</span></a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-content">
       <div>
         <div class="footer-logo"><span class="lang-en">Care for <span class="accent">Rare</span></span><span class="lang-nl">Zorg voor <span class="accent">zeldzaam</span></span></div>
-        <p>
-          <span class="lang-en">Research for individuals with intellectual disabilities and rare genetic conditions.</span>
-          <span class="lang-nl">Onderzoek voor mensen met verstandelijke beperkingen en zeldzame genetische aandoeningen.</span>
-        </p>
+        <p><span class="lang-en">Research and care for people with genetic syndromes and intellectual disabilities.</span><span class="lang-nl">Onderzoek en zorg voor mensen met genetische syndromen en verstandelijke beperkingen.</span></p>
       </div>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
@@ -136,7 +157,7 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Care for Rare. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
+      <p>&copy; 2026 <span class="lang-en">Care for Rare</span><span class="lang-nl">Zorg voor zeldzaam</span>. <span class="lang-en">All rights reserved.</span><span class="lang-nl">Alle rechten voorbehouden.</span></p>
     </div>
   </footer>
 
